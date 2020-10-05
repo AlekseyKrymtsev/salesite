@@ -3,10 +3,12 @@
 }
 
 .header {
-    border-width: 0.14px;
-    height: 68px;
+    min-width: 1200px;
+    border-bottom: 2px solid #b5b7ba;
+    margin: 0 auto;
+    height: 50px;
     text-align: center;
-    padding-top: 20px;  
+    padding-top: 18px; 
 }
 
 div a {
@@ -15,10 +17,22 @@ div a {
 
 .center {
     text-align: center;
+    border-width: 0.14px;
+    height: 68px;
+    padding-top: 20px;
+    
 }
 
-.photo {
-    margin-left: 440px;
+.photo img {
+    margin-right: 150px;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.text {
+    
+    margin-left: 10px;
+    padding-left: 20px;
 }
 
 .footer1 {
@@ -34,5 +48,7 @@ div a {
 	text-align: center;
 	bottom: 0;
 	width: 100%;
-	height: 30px;
+	height: 40px;
+    padding-top: 220px; 
+
 }
