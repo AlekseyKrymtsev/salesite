@@ -1,5 +1,8 @@
 .page {
-    background-color: azure;
+    background-color: #f8f8f8;  /* Цвет фона на каждой странице*/
+}
+.pageText {
+    background-color: #eaeaea; /*Цвет фона на страницах описания товаров*/
 }
 
 .header {
@@ -8,12 +11,46 @@
     margin: 0 auto;
     height: 50px;
     text-align: center;
-    padding-top: 18px; 
+    padding-top: 18px;
+    font-size: 18px;
+    
+}
+
+.header a {
+    text-decoration: none;  /*Ссылки*/
+    color: black;
+}
+
+.headerText a {
+    text-decoration: none;  /*Ссылки внутри описания товара - Назад*/
+    color:indianred;
+}
+
+.headerText h3 {
+    color: black;
+    font-size: 18px;  /* Загаловки*/
+    font-weight:400;
+} 
+
+.short {
+    color: #707070;
+    font-size: 14px; /*Стиль для КОРОТКОГО описания, на странице с ботинками*/
+    font-style:italic;
+    line-height:16px;
+}
+
+.detailed {
+    color: #484343; /*Подробное описание*/
+    font-size: 16px;
+    font-weight:400;
+    line-height:24px;
+    text-align: left;
+    
 }
 
 .map {
     float: right;
-    padding-top:50px;
+    padding-top:50px;   /*Расположение карты*/
     padding-right:10px;
     width: 300px;
 }
@@ -42,6 +79,7 @@ div a {
     padding-top: 20px;
     display: inline-block;
     float: left;
+    outline: 2px solid #aaa;
 }
 
 .goods p {
@@ -67,3 +105,33 @@ div a {
     padding-top: 200px; 
 }
 
+.list {
+    list-style-type: none; /*Убрал маркер в лист*/
+}
+
+.list li {
+    list-style-image: url(img/mark.png); /*Стиль для характеристик*/
+    font-weight: 450;
+    font-size: 14px;
+    color: cadetblue;
+}
+
+.styleArea {
+    display: inline-block; 
+    border: 2px solid #eee; 
+    padding: 10px 20px; 
+    font-family: Verdana, Arial, sans-serif; /*Стиль для Обратной связи,,,,высота и ширина полей в inLine,знаю как прописать в CSS, решил оставить так*/
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.colortext {
+    color: blue; /*Стиль внутри Input*/
+    font-size: 15px;
+}
+
+.product {
+    float: right;
+    outline: 2px solid #aaa; /*Рамка*/
+    
+}
