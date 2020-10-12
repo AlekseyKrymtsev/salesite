@@ -9,10 +9,11 @@
     min-width: 1200px;
     border-bottom: 2px solid #b5b7ba;
     margin: 0 auto;
-    height: 50px;
-    text-align: center;
+    height: 100px;
+    width: 200px;
     padding-top: 18px;
     font-size: 18px;
+    text-align: center;
     
 }
 
@@ -44,13 +45,21 @@
     line-height:16px;
 }
 
+.short:first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
 .detailed {
     color: #484343; /*Подробное описание*/
     font-size: 16px;
     font-weight:400;
     line-height:24px;
     text-align: left;
-    
+}
+.detailed:first-letter {
+    font-size: 30px;
+    color: brown;
 }
 
 .map {
@@ -77,14 +86,22 @@ div a {
     float: left;
 }
 
+.formReg input {
+    text-transform: capitalize;
+}
+
 .goods {
     width: 300px;
     margin-right: 50px;
-    padding-left: 20px;
+    padding-left: 60px;
     padding-top: 20px;
     display: inline-block;
     float: left;
-    outline: 2px solid #aaa;
+    outline: 2px solid grey; 
+}
+
+.goods:hover {
+    outline: 2px solid transparent;  /*Скрывающаяся рамка*/
 }
 
 .goods p {
@@ -110,17 +127,6 @@ div a {
     padding-top: 200px; 
 }
 
-.list {
-    list-style-type: none; /*Убрал маркер в лист*/
-}
-
-.list li {
-    list-style-image: url(img/mark.png); /*Стиль для характеристик*/
-    font-weight: 450;
-    font-size: 14px;
-    color: cadetblue;
-}
-
 .styleArea {
     display: inline-block; 
     border: 2px solid #eee; 
@@ -133,6 +139,7 @@ div a {
 .colortext {
     color: blue; /*Стиль внутри Input*/
     font-size: 15px;
+    background-color: antiquewhite;
 }
 
 .product {
@@ -142,3 +149,43 @@ div a {
     height: 200;
     
 }
+
+.header img {
+    
+    float: left;
+    width:100px;
+    height: 100px;
+    
+}
+
+.wrap {
+    padding-left: 17px;
+}
+
+.characteristic {
+    border: 1px solid #000; /*Таблица*/
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+.characteristic td {
+    border: 1px solid #000;
+}
+
+.table {
+    border: 1px solid #000;
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.table td:nth-child(2) {
+    line-height: 14px;
+}
+
